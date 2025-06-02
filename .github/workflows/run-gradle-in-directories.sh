@@ -24,5 +24,5 @@ done
 for dir in "${!dir_tasks[@]}"; do
   task="${dir_tasks[$dir]}"
   echo "➡️ Running Gradle task '$task' in '$dir'"
-  (cd "$dir" && gradle $task)
+  (cd "$dir" && gradle $task --warning-mode fail)
 done
