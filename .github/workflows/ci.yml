@@ -28,7 +28,7 @@ jobs:
       - name: Run exercises in chapter 2
         run: |
           CHAPTER="exercise-files/chapter_2"
-          TASKS="$CHAPTER/02_02-start=build $CHAPTER/02_02-end=build $CHAPTER/02_03-start=build $CHAPTER/02_03-end=build $CHAPTER/02_04-start=build $CHAPTER/02_04-end=build $CHAPTER/02_05-start=build $CHAPTER/02_05-end=build $CHAPTER/02_06-start=build $CHAPTER/02_06-end=build"
+          TASKS="$CHAPTER/02_02-end=build $CHAPTER/02_03-start=build $CHAPTER/02_03-end=build $CHAPTER/02_04-start=build $CHAPTER/02_04-end=build $CHAPTER/02_05-start=build $CHAPTER/02_05-end=build $CHAPTER/02_06-start=build $CHAPTER/02_06-end=build"
           ./.github/workflows/run-gradle-in-directories.sh "$TASKS"
       - name: Run exercises in chapter 3
         run: |
